@@ -1,0 +1,262 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    font-size:62.5%;
+    user-select: none;
+}
+
+main{
+    min-height:100vh;
+    background:#3476bd;
+    display:grid;
+    place-items:center;
+}
+
+.wrapper{
+    width:30rem;
+    padding:2rem;
+    background:#f3f2f4;
+    border-radius:.7rem;
+    
+}
+
+.wrapper header{
+    padding:1rem .6rem;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.wrapper header i{
+    font-size:1.4rem;
+    color:#879899;
+}
+
+.wrapper header h3{
+    font-size:2.4rem;
+    font-weight:600;
+    color:#d99b0c;
+    text-transform: capitalize;
+}
+
+.wrapper .error {
+    margin-top:2rem;
+    padding:1rem;
+  /* background:#d82e0e; */
+  /* background:#c82e0e; 
+    color:#f3f8f9;*/
+ /*background: #c90b00;*/
+    text-align: center;
+    border-radius:.8rem;
+}
+  
+  .errormsg{
+ background: rgba(198,12,23,.3);
+      
+  }
+  
+ .success{ background:#bccd90; color:#fff;}
+
+ .successspan{
+    font-size:1.2rem;
+ color: rgba(18,142,23,.7);
+ /*error txt*/
+}
+ 
+ .errorspan{
+    font-size:1.2rem;
+ color: rgba(198,12,23,.8);  
+ /*error txt*/
+}
+
+
+.wrapper .inputbox{
+    
+    margin-top:1.7rem;
+}
+
+
+#search{
+    width:70%;
+    margin-right:1rem;
+    background:#f9f9f8;
+    border:.1rem solid #888;
+}
+
+
+.submit{
+    padding: .4rem .8rem;
+    border:none;
+    outline:none;
+    background:#ffc79c;
+    color:#393939;
+    border-radius:.3rem;
+}
+
+.submit:active{
+    transform: scale(.88);
+}
+
+input{
+    font-weight:400;
+    font-size:1.4rem;
+}
+.inputbox input , .locationbtn{
+    width:100%;
+    padding:.6rem .5rem;
+    border:none;
+    outline:none;
+}
+
+
+.or{
+    width:100%;
+    height:.2rem;
+    background:#666;
+    margin-top:2rem;
+    position:relative;
+}
+
+.or:before{
+    content:"or";
+    position:absolute;
+    top:-1.2rem;
+    z-index:1;
+    background:#f3f2f4;
+    color:#888;
+    padding:.3rem;
+    left:50%;
+    transform:translateX(-50%);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:1.5rem;
+}
+
+.locationbtn{
+    background:#3498db;
+    font-size:1.5rem;
+    color:#f3f9f7;
+    border-radius:.7rem;
+    margin-top:1rem;
+}
+
+.locationbtn:active{
+    transform: scale(.88);
+}
+input:focus{
+    border:2px solid #3467f8;
+    
+}
+
+
+.weatherdata{
+    padding:1.5rem .7rem;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.weatherdata img{
+    width:8rem;
+    
+}
+
+.weatherdata .temp{
+    font-size: 2.2rem;
+    margin-top:1rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.temp .deg{
+    font-size:1.8rem;
+}
+
+.wdesc{
+    font-weight:600;
+}
+
+.basicinfo{
+    padding:1.3rem .6rem;
+}
+
+.res span{
+    margin-right:1rem;
+}
+
+.basicinfo i{
+    margin-right:.7rem;
+    margin-top:1rem;
+    font-size:1.6rem;
+}
+
+.fa-location-dot{
+    color:#ff344c;
+}
+
+.fa-snowflake{
+    color:#3498db;
+    margin-left:-.5rem;
+}
+.basicinfo h3{
+    font-weight:400;
+    margin-right:1rem;
+}
+
+
+.res_data{
+    
+    z-index:50;
+}
+.otherweatherinfo{
+    
+    display: none;
+    z-index:100;
+}
+.weatherinfo{
+    padding:2rem 1rem;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    flex-wrap: wrap;
+    
+}
+
+.feels{
+    flex-basis:45%;
+    padding:1rem;
+    border:1px solid #333;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-direction: column;
+    border-radius:.8rem;
+}
+
+.feels i{
+    margin-right:1rem;
+}
+
+.feels .fa-smile{
+    color:#45dbcd;
+}
+
+.feels .fa-water{
+    color:#2365ae;
+}
+
+.feels h3{
+    margin-top:1rem;
+}
+
+.display{
+    display:block;
+}
